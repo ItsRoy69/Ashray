@@ -3,7 +3,7 @@
 const mongoose = require("mongoose");
 
 const mongoURI =
-  "mongodb+srv://tamaldas69:tamaldas69@cluster0.g1f0o.mongodb.net/myfirstdatabase?retryWrites=true&w=majority";
+  "mongodb+srv://tamaldas69:tamaldas69@cluster0.g1f0o.mongodb.net/milandatabase?retryWrites=true&w=majority";
 
 const connectToMongo = () => {
   mongoose.connect(mongoURI, () => {
