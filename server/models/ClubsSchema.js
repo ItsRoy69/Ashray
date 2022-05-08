@@ -25,6 +25,10 @@ const ClubsSchema = mongoose.Schema({
     type: String,
     required: true,
   },
+  clublink: {
+    type: String,
+    required: true,
+  },
 });
 
 module.exports = mongoose.model("Clubs", ClubsSchema);

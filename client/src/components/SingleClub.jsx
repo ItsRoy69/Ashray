@@ -1,4 +1,5 @@
 import * as React from "react";
+import { Link } from "react-router-dom";
 export default function SingleClub({ club }) {
 	const expand = () => {
 		document.getElementById(`less${club._id}`).classList.add("hidden");
@@ -43,6 +44,12 @@ export default function SingleClub({ club }) {
 					<span className="seeBtn" onClick={contract}>
 						See less
 					</span>
+				</div>
+				<div className="club-info mt-3">
+					{/* <p>{club.clublink}</p> */}
+					{/* <Link to={{ pathname: `${club.clublink}` }}>{club.clublink}</Link> */}
+					<a href={club.clublink}>Link to club</a>
+
 				</div>
 
 			</div>

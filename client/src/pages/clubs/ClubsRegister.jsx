@@ -29,6 +29,7 @@ const ClubLogin = () => {
     address: "",
     pincode: "",
     description: "",
+    clublink: "",
   });
 
   const [isEmailValid, setIsEmailValid] = useState(false);
@@ -163,7 +164,22 @@ const ClubLogin = () => {
                 required
                 placeholder="Enter your description"
               />
+
+
               <small id="textDemo" className="form-text text-muted"></small>
+
+              <div className="form-outline mb-4">
+
+                <input
+                  type="text"
+                  className="form-control"
+                  name="clublink"
+                  value={credentials.clublink}
+                  onChange={handleChange}
+                  required
+                  placeholder="Enter your Club's Portal"
+                />
+              </div>
 
               <div className="d-grid gap-2 py-4">
                 <button

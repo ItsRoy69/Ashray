@@ -11,6 +11,7 @@ const ClubsPage = () => {
 		const fetchClubData = async () => {
 			const response = await GetAllClubs();
 			setClubData(response);
+			console.log(response);
 		};
 		fetchClubData();
 	}, []);

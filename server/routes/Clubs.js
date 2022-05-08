@@ -9,10 +9,19 @@ var jwt = require("jsonwebtoken");
 
 //* Route 1  - Club Registration
 router.post("/register", async (req, res) => {
-  const { name, email, password, address, pincode, description } = req.body;
+  const { name, email, password, address, pincode, description, clublink } =
+    req.body;
 
   //Checks if the inputted field are empty or not
-  if (!email || !password || !name || !address || !pincode || !description) {
+  if (
+    !email ||
+    !password ||
+    !name ||
+    !address ||
+    !pincode ||
+    !description ||
+    !clublink
+  ) {
     return res.status(422).json({ error: "Please add all the fields" });
   }
 
@@ -35,6 +44,7 @@ router.post("/register", async (req, res) => {
             address,
             pincode,
             description,
+            clublink,
           });
           club
             .save() //saving the data to db
