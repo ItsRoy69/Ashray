@@ -20,6 +20,10 @@ It is often seen that people get scammed and their money is stolen where they we
 
 With Ashray we aim at bringing all the various NGOs and donors under one single roof to ease the burden of going to find their appropriate donors and the appropriate communities to donate to. With the help of our search filters and ask platform, it becomes easier for the people to find their right community to serve.
 
+## WorkFlow
+
+![WhatsApp Image 2022-05-08 at 3 34 41 PM](https://user-images.githubusercontent.com/78967360/167292076-ebd06f03-c0a0-4b26-8816-e14b813246d9.jpeg)
+
 ## Important Links!
 <!-- 
 Website Link:
