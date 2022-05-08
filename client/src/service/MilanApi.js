@@ -1,5 +1,20 @@
+//* All the AXIOS API calls will be made from here to the backend
+//* These functions will be exported and then imported wherever needed
+
 import Axios from "axios";
 
+const User_Log = "https://milan-jwoc.herokuapp.com/user/login";
+const User_Reg = "https://milan-jwoc.herokuapp.com/user/register";
+const Club_Log = "https://milan-jwoc.herokuapp.com/club/login";
+const Club_Reg = "https://milan-jwoc.herokuapp.com/club/register";
+const All_Clubs = "https://milan-jwoc.herokuapp.com/display/allClubs";
+const Report_Log = "https://milan-jwoc.herokuapp.com/user/userreport";
+//^ `````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````
+//* Axios call to login a User
+//* IF sucess we alert user made else we alert user failed
+//* we get the credentials from the Awb.jsx
+
+//* LOGIN USER
 export const LoginUser = async (credentials) => {
   try {
     const Post = await Axios.post(`${User_Log}`, credentials);
