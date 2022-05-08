@@ -1,6 +1,6 @@
 <p align="center">
 
-<img src="https://user-images.githubusercontent.com/78967360/167267307-baa8b509-498f-4bde-930b-e0a70b1b7deb.png" width="100%">
+<img src="https://user-images.githubusercontent.com/78967360/167282860-af11e572-c4c7-4a86-8f58-1e1517ba3795.jpg" width="100%">
 
    <h3 align="center">Ashray</h3>
    <p align="center">Where help meets need.</p>
@@ -84,6 +84,5 @@ npm run server
 <img src="./images/command.png" width="300px"> -->
 
 ## Our Team
-
-![](https://user-images.githubusercontent.com/78967360/167267653-386be7c9-4fe0-47e9-b643-9146c6a16a65.png)
+![ash](https://user-images.githubusercontent.com/78967360/167282885-cb463b05-73cd-40a0-8391-6aa26d0d05cd.jpg)
 
