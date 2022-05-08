@@ -9,9 +9,11 @@ import LoginBanner from "../components/loginBanner";
 import ClubBanner from "../components/ClubBanner";
 
 const AuthState = () => {
-  const [login, setLogin] = useState(sessionStorage.getItem("token"));
+  const [login, setLogin] = useState(sessionStorage.getItem("token") || sessionStorage.getItem("club"));
   return login;
 };
+
+
 const Home = () => {
   return (
     <>
@@ -20,7 +22,7 @@ const Home = () => {
       {AuthState() ? <LoginBanner /> : <Banner />}
       <HomeCardsContainer />
       <DonateBanner />
-      {localStorage.getItem("club") ? <ClubBanner /> : <EventsBanner />}
+      {sessionStorage.getItem("club") ? <ClubBanner /> : <EventsBanner />}
       <Footer />
     </>
   );

@@ -5,6 +5,8 @@ import { Link, useNavigate } from "react-router-dom";
 
 const Navbar = (props) => {
   const handleLogout = () => {
+
+
     sessionStorage.removeItem("token");
     sessionStorage.removeItem("type");
     alert("Logging you out");
@@ -13,7 +15,7 @@ const Navbar = (props) => {
   const navigate = useNavigate();
 
   const handleNavigate = () => {
-    if (sessionStorage.getItem("token")) {
+    if ((sessionStorage.getItem("token") || sessionStorage.getItem("club"))) {
       navigate("/user/profile");
     } else {
       navigate("/user/login");

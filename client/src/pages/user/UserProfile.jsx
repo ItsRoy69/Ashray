@@ -5,18 +5,26 @@ import { Link, useNavigate } from "react-router-dom";
 
 export default function UserProfile() {
 
-    const Navigate = useNavigate();
-    const handleLogout = () => {
-        sessionStorage.removeItem("token");
-        Navigate("/");
+  const Navigate = useNavigate();
+  const handleLogout = () => {
+    if (sessionStorage.getItem("token")) {
+      sessionStorage.removeItem("token");
     }
 
-    return (
-        <>
-            <Navbar />
+    if (sessionStorage.getItem("club")) {
+      sessionStorage.removeItem("club");
+    }
 
 
-            <section className="vh-100">
+    Navigate("/");
+  }
+
+  return (
+    <>
+      <Navbar />
+
+
+      <section className="vh-100">
         <div className="container py-5 h-100">
           <div className="row d-flex align-items-center justify-content-center h-100">
             <div className="col-md-8 col-lg-7 col-xl-6">
@@ -38,7 +46,7 @@ export default function UserProfile() {
                     Update Email address
                   </label>
 
-                  
+
                 </div>
                 <div className="form-outline mb-4">
                   <label
@@ -52,19 +60,19 @@ export default function UserProfile() {
                 <br />
                 <button
                   onClick={handleLogout}
-                  className="btn btn-lg btn-block"                  
+                  className="btn btn-lg btn-block"
                   style={{ backgroundColor: "#89b5f7" }}
                 >
                   Logout
                 </button>
                 <br></br> <br></br>
-                
+
               </form>
             </div>
           </div>
         </div>
       </section>
 
-        </>
-    )
+    </>
+  )
 }

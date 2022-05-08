@@ -49,7 +49,7 @@ function ClubLogin() {
     Data.then((response) => {
       if (response.data.success === true) {
         alert("Logged you in!!");
-        localStorage.setItem("club", response.data.authToken);
+        sessionStorage.setItem("club", response.data.authToken);
         Navigate("/");
       } else if (response.data.success === false) {
         alert("Please input valid credentials");
