@@ -24,9 +24,9 @@ With Ashray we aim at bringing all the various NGOs and donors under one single 
 <!-- 
 Website Link:
 <br/> -->
-Youtube Link: https://youtu.be/
+Youtube Link: https://youtu.be/BciKidHmqb0
 <br/>
-Hosted Url: https://
+Hosted Url: https://ashray-ngo.netlify.app/
 <!-- <br/>
 Presentation Link: -->
 
