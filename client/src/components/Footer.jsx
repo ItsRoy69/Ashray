@@ -1,5 +1,5 @@
 import React from "react";
-import { ReportProblem } from "../service/MilanApi";
+import { ReportProblem } from "../service/AshrayApi";
 import "../styles/Footer.css";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";

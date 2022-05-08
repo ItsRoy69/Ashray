@@ -3,12 +3,12 @@
 
 import Axios from "axios";
 
-const User_Log = "https://milan-jwoc.herokuapp.com/user/login";
-const User_Reg = "https://milan-jwoc.herokuapp.com/user/register";
-const Club_Log = "https://milan-jwoc.herokuapp.com/club/login";
-const Club_Reg = "https://milan-jwoc.herokuapp.com/club/register";
-const All_Clubs = "https://milan-jwoc.herokuapp.com/display/allClubs";
-const Report_Log = "https://milan-jwoc.herokuapp.com/user/userreport";
+const User_Log = "https://ashray-hd.herokuapp.com/user/login";
+const User_Reg = "https://ashray-hd.herokuapp.com/user/register";
+const Club_Log = "https://ashray-hd.herokuapp.com/club/login";
+const Club_Reg = "https://ashray-hd.herokuapp.com/club/register";
+const All_Clubs = "https://ashray-hd.herokuapp.com/display/allClubs";
+const Report_Log = "https://ashray-hd.herokuapp.com/user/userreport";
 //^ `````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````
 //* Axios call to login a User
 //* IF sucess we alert user made else we alert user failed
@@ -110,7 +110,23 @@ export const ReportProblem = async (credentials) => {
 //* GET ALL EVENTS
 export const GetAllEvents = async () => {
   try {
-    const response = await Axios.get(`http://localhost:5000/display/allevents`);
+    const response = await Axios.get(
+      `https://ashray-hd.herokuapp.com/display/allevents`
+    );
+    return response.data;
+  } catch (error) {
+    console.log(error);
+    alert("INTERNAL ERROR, PLEASE TRY AGAIN LATER");
+  }
+};
+
+//create event
+export const CreateAnEvents = async (credentials) => {
+  try {
+    const response = await Axios.post(
+      "https://ashray-hd.herokuapp.com/club/createevent",
+      credentials
+    );
     return response.data;
   } catch (error) {
     console.log(error);

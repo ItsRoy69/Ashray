@@ -2,7 +2,7 @@ import React, { useState } from "react";
 
 import { Link, useNavigate } from "react-router-dom";
 import Navbar from "../../components/Navbar";
-import { RegisterUser } from "../../service/MilanApi";
+import { RegisterUser } from "../../service/AshrayApi";
 
 //* The styles for Login and Register are essentially same
 import "../../styles/UserLogin.css";

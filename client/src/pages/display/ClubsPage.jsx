@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import SingleClub from "../../components/SingleClub";
 import "../../styles/ClubsPage.css";
 import Navbar from "../../components/Navbar";
-import { GetAllClubs } from "../../service/MilanApi";
+import { GetAllClubs } from "../../service/AshrayApi";
 
 const ClubsPage = () => {
 	const [clubData, setClubData] = useState([]);

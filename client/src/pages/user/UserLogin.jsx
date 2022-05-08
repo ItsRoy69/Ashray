@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import Navbar from "../../components/Navbar";
 import "../../styles/UserLogin.css";
-import { LoginUser } from "../../service/MilanApi";
+import { LoginUser } from "../../service/AshrayApi";
 
 function UserLogin() {
   const Navigate = useNavigate();

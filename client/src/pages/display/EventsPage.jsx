@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import SingleClub from "../../components/SingleClub";
 import "../../styles/ClubsPage.css";
 import Navbar from "../../components/Navbar";
-import { GetAllClubs, GetAllEvents } from "../../service/MilanApi";
+import { GetAllClubs, GetAllEvents } from "../../service/AshrayApi";
 import SingleEvent from "../../components/SingleEvent";
 import Eventspic from "../../assets/pictures/EventsPagefloating.svg"
 

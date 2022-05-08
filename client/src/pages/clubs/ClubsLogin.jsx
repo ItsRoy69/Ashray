@@ -3,7 +3,7 @@ import Navbar from "../../components/Navbar";
 import { Link, useNavigate } from "react-router-dom";
 import "../../styles/ClubLogin.css";
 import Pic from "../../assets/pictures/clubs-login.jpg";
-import { LoginClub } from "../../service/MilanApi";
+import { LoginClub } from "../../service/AshrayApi";
 import { Audio, Oval, TailSpin } from "react-loader-spinner";
 
 function ClubLogin() {

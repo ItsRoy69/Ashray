@@ -80,8 +80,8 @@ router.post("/createevent", async (req, res) => {
     const { eventname, eventlocation, eventdate, eventdescription } = req.body;
     const eventData = Events({
       Eventname: eventname,
-      Eventdate: eventdate,
       Eventlocation: eventlocation,
+      Eventdate: eventdate,
       Eventdescription: eventdescription,
     });
     await eventData.save();

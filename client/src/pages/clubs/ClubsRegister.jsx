@@ -3,7 +3,7 @@ import { Audio, Oval, TailSpin } from "react-loader-spinner";
 import Navbar from "../../components/Navbar";
 import registrationImage from "../../assets/pictures/clubRegistrationImage.png";
 import { Link, useNavigate } from "react-router-dom";
-import { RegisterClub } from "../../service/MilanApi";
+import { RegisterClub } from "../../service/AshrayApi";
 import "../../styles/ClubsRegister.css";
 
 const ClubLogin = () => {
