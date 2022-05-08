@@ -61,7 +61,8 @@ const Navbar = (props) => {
               </li>
 
               <li className="nav-item home">
-                <a href="/display/events">Events</a>
+                <Link to={"/display/events"}>Events</Link>
+
               </li>
 
               <li className="nav-item home">
