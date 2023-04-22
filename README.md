@@ -30,7 +30,7 @@ Website Link:
 <br/> -->
 Youtube Link: https://youtu.be/BciKidHmqb0
 <br/>
-Hosted Url: https://ashray-ngo.netlify.app/
+Hosted Url: https://ashray-ashen.vercel.app/
 <!-- <br/>
 Presentation Link: -->
 
