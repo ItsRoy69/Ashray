@@ -3,12 +3,12 @@
 
 import Axios from "axios";
 
-const User_Log = "https://ashray-hd.herokuapp.com/user/login";
-const User_Reg = "https://ashray-hd.herokuapp.com/user/register";
-const Club_Log = "https://ashray-hd.herokuapp.com/club/login";
-const Club_Reg = "https://ashray-hd.herokuapp.com/club/register";
-const All_Clubs = "https://ashray-hd.herokuapp.com/display/allClubs";
-const Report_Log = "https://ashray-hd.herokuapp.com/user/userreport";
+const User_Log = "https://ashray-backend.onrender.com/user/login";
+const User_Reg = "https://ashray-backend.onrender.com/user/register";
+const Club_Log = "https://ashray-backend.onrender.com/club/login";
+const Club_Reg = "https://ashray-backend.onrender.com/club/register";
+const All_Clubs = "https://ashray-backend.onrender.com/display/allClubs";
+const Report_Log = "https://ashray-backend.onrender.com/user/userreport";
 //^ `````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````
 //* Axios call to login a User
 //* IF sucess we alert user made else we alert user failed
@@ -111,7 +111,7 @@ export const ReportProblem = async (credentials) => {
 export const GetAllEvents = async () => {
   try {
     const response = await Axios.get(
-      `https://ashray-hd.herokuapp.com/display/allevents`
+      `https://ashray-backend.onrender.com/display/allevents`
     );
     return response.data;
   } catch (error) {
@@ -124,7 +124,7 @@ export const GetAllEvents = async () => {
 export const CreateAnEvents = async (credentials) => {
   try {
     const response = await Axios.post(
-      "https://ashray-hd.herokuapp.com/club/createevent",
+      "https://ashray-backend.onrender.com/club/createevent",
       credentials
     );
     return response.data;
